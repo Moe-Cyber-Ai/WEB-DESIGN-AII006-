@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - CyberGuard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CyberGuard</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="homepage.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page1.html" class="nav-link" target="_blank">Fundamentals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page2.html" class="nav-link" target="_blank">Threats & Risks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page3.html" class="nav-link" target="_blank">Defense Strategies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page4.html" class="nav-link" target="_blank">Best Practices</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page5.html" class="nav-link" target="_blank">Tools & Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page6.html" class="nav-link active">Case Studies</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Case Studies</h1>
+        <p>Real-World Cybersecurity Incidents and Lessons Learned</p>
+    </section>
+
+    <!-- Content -->
+    <main class="content">
+        <section class="article-section">
+            <h2>Learning from Real Incidents</h2>
+            <p>
+                Examining actual cybersecurity breaches and incidents provides valuable insights into attack methods, 
+                vulnerabilities, and effective response strategies. These case studies help us understand the real-world 
+                implications of cybersecurity decisions.
+            </p>
+        </section>
+
+        <section class="article-section">
+            <h2>Case Study 1: Equifax Data Breach (2017)</h2>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p>
+                    Equifax, one of the largest credit reporting agencies, suffered a massive data breach affecting 
+                    approximately 147 million people. Attackers gained access to personal information including names, 
+                    Social Security numbers, birth dates, addresses, and in some cases, driver's license numbers.
+                </p>
+                <h3>What Happened</h3>
+                <ul class="list-styled">
+                    <li>Attackers exploited a known vulnerability in Apache Struts web framework</li>
+                    <li>The vulnerability had a public patch available, but it wasn't applied</li>
+                    <li>Attackers remained undetected for approximately two months</li>
+                    <li>Multiple security failures allowed the breach to occur and persist</li>
+                </ul>
+                <h3>Lessons Learned</h3>
+                <ul class="list-styled">
+                    <li>Patch management is critical—apply security patches promptly</li>
+                    <li>Vulnerability detection systems were not effective enough</li>
+                    <li>Proper network segmentation could have limited the damage</li>
+                    <li>Enhanced monitoring and logging are essential for early detection</li>
+                    <li>Encryption of sensitive data reduces breach impact</li>
+                </ul>
+                <h3>Impact</h3>
+                <p>
+                    Equifax faced significant financial penalties, lawsuits, and reputational damage. The incident highlighted 
+                    the importance of security fundamentals and the need for proactive defense strategies.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Case Study 2: NotPetya Ransomware Attack (2017)</h2>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p>
+                    NotPetya was a destructive ransomware attack that spread globally, affecting organizations across 
+                    multiple industries. While marketed as ransomware, it was primarily designed to disrupt and destroy systems.
+                </p>
+                <h3>What Happened</h3>
+                <ul class="list-styled">
+                    <li>Attack originated from a compromised Ukrainian accounting software update</li>
+                    <li>The malware spread rapidly using the EternalBlue exploit (Windows SMB vulnerability)</li>
+                    <li>It caused billions of dollars in damages globally</li>
+                    <li>Affected major companies including Maersk, FedEx, and numerous others</li>
+                </ul>
+                <h3>Lessons Learned</h3>
+                <ul class="list-styled">
+                    <li>Software supply chain security is critical—compromised updates can spread widely</li>
+                    <li>Unpatched systems are extremely vulnerable—patching must be prioritized</li>
+                    <li>Network segmentation is essential to limit lateral movement</li>
+                    <li>Organizations need robust incident response and recovery plans</li>
+                    <li>Backup strategies must include offline backups to protect against ransomware</li>
+                </ul>
+                <h3>Impact</h3>
+                <p>
+                    The attack demonstrated the interconnected nature of modern IT environments and the catastrophic 
+                    potential of cyberattacks. It underscored the need for comprehensive defense strategies.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Case Study 3: SolarWinds Supply Chain Attack (2020)</h2>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p>
+                    The SolarWinds attack was a sophisticated supply chain attack that compromised the software updates 
+                    of SolarWinds Orion platform, affecting thousands of organizations including government agencies.
+                </p>
+                <h3>What Happened</h3>
+                <ul class="list-styled">
+                    <li>Attackers compromised SolarWinds' build environment</li>
+                    <li>Malicious code was injected into legitimate software updates</li>
+                    <li>Approximately 18,000 organizations downloaded the compromised updates</li>
+                    <li>U.S. government agencies were among the affected organizations</li>
+                    <li>The attack went undetected for months</li>
+                </ul>
+                <h3>Lessons Learned</h3>
+                <ul class="list-styled">
+                    <li>Suppliers and third-party vendors represent significant security risks</li>
+                    <li>Vendor security assessments and monitoring are essential</li>
+                    <li>Zero-trust security model—don't trust even "legitimate" updates without verification</li>
+                    <li>Enhanced monitoring and threat hunting capabilities are necessary</li>
+                    <li>Incident detection tools that monitor suspicious behavior post-installation are valuable</li>
+                </ul>
+                <h3>Impact</h3>
+                <p>
+                    This attack highlighted vulnerabilities in the software supply chain and demonstrated that even 
+                    large, trusted software vendors can be compromised. It led to increased focus on supply chain security.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Case Study 4: Target Data Breach (2013)</h2>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p>
+                    Target, a major U.S. retailer, suffered a data breach affecting approximately 40 million credit card 
+                    numbers and 70 million records containing personal information.
+                </p>
+                <h3>What Happened</h3>
+                <ul class="list-styled">
+                    <li>Attackers gained initial access through a third-party vendor (HVAC contractor)</li>
+                    <li>They moved laterally through the network to reach payment systems</li>
+                    <li>Security tools detected the attack but alerts were not acted upon immediately</li>
+                    <li>Attackers installed malware on point-of-sale terminals</li>
+                </ul>
+                <h3>Lessons Learned</h3>
+                <ul class="list-styled">
+                    <li>Third-party vendor access represents a significant attack surface</li>
+                    <li>Network segmentation is crucial to prevent lateral movement</li>
+                    <li>Security alerts must be monitored and investigated promptly</li>
+                    <li>Payment card systems should be isolated and monitored closely</li>
+                    <li>Vendor security requirements and monitoring are essential</li>
+                </ul>
+                <h3>Impact</h3>
+                <p>
+                    Target faced significant financial losses, declined sales, and reputational damage. The incident led to 
+                    widespread industry discussions about retail security and payment card protection.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Key Takeaways from Case Studies</h2>
+            <ul class="list-styled">
+                <li><strong>Patch Management:</strong> Unpatched systems are a leading cause of breaches</li>
+                <li><strong>Network Segmentation:</strong> Isolating critical systems limits damage from breaches</li>
+                <li><strong>Third-Party Risk:</strong> Vendors and suppliers require security oversight</li>
+                <li><strong>Detection and Response:</strong> Monitoring and quick response reduce breach impact</li>
+                <li><strong>Defense in Depth:</strong> Multiple security layers provide better protection</li>
+                <li><strong>Incident Planning:</strong> Organizations prepared for incidents respond more effectively</li>
+                <li><strong>Encryption:</strong> Protecting sensitive data limits the value of stolen information</li>
+            </ul>
+        </section>
+
+        <section class="navigation-links">
+            <a href="page5.html" target="_blank" class="nav-btn">← Previous: Tools & Resources</a>
+            <a href="index.html" class="nav-btn">Back to Home →</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 CyberGuard. Introduction to Cybersecurity. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

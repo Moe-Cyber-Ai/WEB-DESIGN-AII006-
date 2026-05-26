@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Strategies - CyberGuard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CyberGuard</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="homepage.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page1.html" class="nav-link" target="_blank">Fundamentals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page2.html" class="nav-link" target="_blank">Threats & Risks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page3.html" class="nav-link active">Defense Strategies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page4.html" class="nav-link" target="_blank">Best Practices</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page5.html" class="nav-link" target="_blank">Tools & Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page6.html" class="nav-link" target="_blank">Case Studies</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Defense Strategies</h1>
+        <p>Building a Secure and Resilient Security Architecture</p>
+    </section>
+
+    <!-- Content -->
+    <main class="content">
+        <section class="article-section">
+            <h2>Defense in Depth</h2>
+            <p>
+                Defense in depth is a security strategy that uses multiple layers of defense mechanisms to protect 
+                systems and data. Rather than relying on a single security control, this approach assumes that some 
+                controls will fail and ensures that others are in place to provide protection.
+            </p>
+            <p>
+                The philosophy is that if one layer is compromised, additional layers will continue to provide protection.
+            </p>
+        </section>
+
+        <section class="article-section">
+            <h2>Access Control</h2>
+            <p>
+                Access control ensures that only authorized users can access specific resources. Key concepts include:
+            </p>
+            <div class="concept-grid">
+                <div class="concept-box">
+                    <h3>Authentication</h3>
+                    <p>Verifying the identity of a user or system through credentials like passwords, biometrics, or security tokens.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Authorization</h3>
+                    <p>Determining what authenticated users are permitted to do based on their roles and permissions.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Accounting</h3>
+                    <p>Logging and monitoring user activities for compliance and incident investigation.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Non-Repudiation</h3>
+                    <p>Ensuring that users cannot deny their actions through digital signatures and audit logs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Encryption</h2>
+            <p>
+                Encryption protects data by converting it into a coded form that can only be read with the correct key. 
+                It's essential for protecting sensitive information both in transit and at rest.
+            </p>
+            <div class="types-container">
+                <div class="type-card">
+                    <h3>Symmetric Encryption</h3>
+                    <p>Uses the same key for both encryption and decryption. Fast and efficient for large amounts of data.</p>
+                </div>
+                <div class="type-card">
+                    <h3>Asymmetric Encryption</h3>
+                    <p>Uses a pair of keys: public for encryption and private for decryption. Enables secure key exchange.</p>
+                </div>
+                <div class="type-card">
+                    <h3>Hashing</h3>
+                    <p>One-way function that converts data into a fixed-length unique value. Used for integrity verification.</p>
+                </div>
+                <div class="type-card">
+                    <h3>Public Key Infrastructure</h3>
+                    <p>System for managing digital certificates and key distribution at scale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Network Security Controls</h2>
+            <div class="terms-list">
+                <div class="term-item">
+                    <h4>Firewalls</h4>
+                    <p>Monitor and control incoming and outgoing network traffic based on predetermined security rules.</p>
+                </div>
+                <div class="term-item">
+                    <h4>Intrusion Detection Systems (IDS)</h4>
+                    <p>Monitor networks for suspicious activity and alert administrators of potential attacks.</p>
+                </div>
+                <div class="term-item">
+                    <h4>Intrusion Prevention Systems (IPS)</h4>
+                    <p>Similar to IDS but actively blocks detected threats in real-time.</p>
+                </div>
+                <div class="term-item">
+                    <h4>Virtual Private Networks (VPN)</h4>
+                    <p>Create encrypted tunnels for secure communication over untrusted networks.</p>
+                </div>
+                <div class="term-item">
+                    <h4>Network Segmentation</h4>
+                    <p>Dividing networks into separate zones to limit lateral movement during breaches.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Endpoint Protection</h2>
+            <p>
+                Endpoints—individual devices like computers and smartphones—are common attack targets. Endpoint protection 
+                includes:
+            </p>
+            <ul class="list-styled">
+                <li>Antivirus and anti-malware software</li>
+                <li>Host-based firewalls</li>
+                <li>Data Loss Prevention (DLP) tools</li>
+                <li>Mobile device management (MDM)</li>
+                <li>Endpoint Detection and Response (EDR) solutions</li>
+            </ul>
+        </section>
+
+        <section class="article-section">
+            <h2>Incident Response</h2>
+            <p>
+                Despite preventive measures, security incidents will occur. An effective incident response plan minimizes damage and recovery time:
+            </p>
+            <div class="concept-grid">
+                <div class="concept-box">
+                    <h3>Preparation</h3>
+                    <p>Develop plans, train teams, and deploy tools before incidents occur.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Detection</h3>
+                    <p>Identify and confirm that a security incident has occurred.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Response</h3>
+                    <p>Contain the incident and prevent further damage or data loss.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Recovery</h3>
+                    <p>Restore systems to normal operation and verify functionality.</p>
+                </div>
+                <div class="concept-box">
+                    <h3>Post-Incident</h3>
+                    <p>Analyze the incident, document lessons learned, and improve security.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <h2>Security Awareness Training</h2>
+            <p>
+                The human element is critical to cybersecurity. Regular security awareness training helps employees:
+            </p>
+            <ul class="list-styled">
+                <li>Recognize and report phishing attempts</li>
+                <li>Create strong passwords and protect credentials</li>
+                <li>Handle sensitive data appropriately</li>
+                <li>Follow security policies and procedures</li>
+                <li>Understand their role in organizational security</li>
+            </ul>
+        </section>
+
+        <section class="navigation-links">
+            <a href="page2.html" target="_blank" class="nav-btn">← Previous: Threats & Risks</a>
+            <a href="page4.html" target="_blank" class="nav-btn">Next: Best Practices →</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 CyberGuard. Introduction to Cybersecurity. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
